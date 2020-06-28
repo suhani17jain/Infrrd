@@ -1,0 +1,27 @@
+.room {
+    width: 90px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+}
+
+.rooms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 338px;
+    margin-top: 50px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}

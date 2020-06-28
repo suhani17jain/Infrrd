@@ -1,0 +1,12 @@
+<div class="calendar">
+    <h1>Select the Date</h1>
+    <mat-form-field appearance="fill">
+        <input matInput [matDatepicker]="picker" [min]='minDate' [matDatepickerFilter]='dateFilter'
+            (dateChange)="addEvent($event)">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+</div>
+<div *ngIf='showSlots'>
+    <app-slots></app-slots>
+</div>

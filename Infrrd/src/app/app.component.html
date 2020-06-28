@@ -1,0 +1,12 @@
+<div class="meetingRoom">
+  <h1>Welcome to Meeting Room</h1>
+  <button (click)='book = true; schedule = false'>Book Your Room</button>
+  <button (click)='book = false; schedule = true'>View Schedule</button>
+</div>
+
+<div *ngIf='book'>
+  <app-calendar></app-calendar>
+</div>
+<div *ngIf='schedule'>
+  <app-schedule></app-schedule>
+</div>

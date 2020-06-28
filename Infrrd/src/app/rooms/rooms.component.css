@@ -1,0 +1,34 @@
+.room {
+    width: 90px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rooms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.form {
+    border: 1px solid black;
+    width: 500px;
+    height: 398px;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: 500px;
+    text-align: center;
+    padding: 4px 4px;
+}
+
+input {
+    width: 260px;
+    height: 30px;
+}
+
+.roomTitle{
+    font-weight: bold;
+}

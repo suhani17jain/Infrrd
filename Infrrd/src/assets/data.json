@@ -1,0 +1,26 @@
+[
+    {
+        "date": "Mon Jun 29 2020",
+        "roomId": 1,
+        "userName": "Suhani Jain",
+        "agenda": "meeting",
+        "status": "booked",
+        "slotName": "slot2"
+    },
+    {
+        "date": "Mon Jun 29 2020",
+        "roomId": 2,
+        "userName": "aa",
+        "agenda": "meeting",
+        "status": "booked",
+        "slotName": "slot1"
+    },
+    {
+        "date": "Mon Jun 30 2020",
+        "roomId": 3,
+        "userName": "Suhani Jain",
+        "agenda": "meeting",
+        "status": "booked",
+        "slotName": "slot1"
+    }
+]

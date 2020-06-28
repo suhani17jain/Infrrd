@@ -1,0 +1,23 @@
+<div style="text-align: center">
+    <h3>Select the room</h3>
+    <div class="rooms">
+        <button class="room" *ngFor='let room of rooms' (click)='getSchedule(room.id)'>
+            <span>Room</span>
+            <p class="roomNo">{{room.id}}</p>
+        </button>
+    </div>
+    <div *ngIf='showSchedule' style="text-align: center">
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Slot</th>
+                <th>Name</th>
+            </tr>
+            <tr *ngFor='let schedule of reservedRooms'>
+                <th>{{schedule.date}}</th>
+                <th>{{schedule.slotTimmings}}</th>
+                <th>{{schedule.userName}}</th>
+            </tr>
+        </table>
+    </div>
+</div>

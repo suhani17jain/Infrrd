@@ -1,0 +1,14 @@
+<h1 style="text-align: center">Slots</h1>
+<div class="slots">
+    <button class="slot" (click)='getAvailableRooms(slot)' *ngFor='let slot of slots' [disabled]='slot.count == 10'>
+        <div>
+            <span>{{slot.statTime}}</span> -<span>{{slot.endTime}}</span>
+            <p>Rooms Booked</p>
+            <p>{{slot.count}}</p>
+        </div>
+
+    </button>
+</div>
+<div *ngIf='showRooms'>
+    <app-rooms></app-rooms>
+</div>

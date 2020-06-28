@@ -1,0 +1,25 @@
+<h1 style="text-align: center">Rooms</h1>
+<div class="rooms">
+    <button class="room" *ngFor='let room of rooms' (click)='bookRoom(room)'>
+        <span class="roomTitle">Room </span>
+        <p class="roomNo"><span>#</span>{{room.id}}</p>
+        <p>{{room.status}} <span *ngIf='room.status == "Booked"'>by</span></p>
+        <p>{{room.name}}</p>
+        <button *ngIf='room.status == "Booked"' (click)='deleteSlot(room)'>Delete</button>
+    </button>
+</div>
+
+<div *ngIf='showForm' class="form">
+    <h5>Book the meeting room</h5>
+    <form #userDetails='ngForm' (ngSubmit)='formSubmit(userDetails.value)'>
+        <div>
+            <h3>Name of the user</h3>
+            <input type="text" name="name" ngModel required>
+        </div>
+        <div>
+            <h3>Agenda for the meeting</h3>
+            <textarea name="" id="" cols="30" rows="10" name="agenda" ngModel required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
